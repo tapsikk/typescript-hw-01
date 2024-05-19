@@ -1,11 +1,11 @@
 type page = {
   title: string,
   likes: number,
-  accounts: ["Max", "Anton", "Nikita"],
-  status: string,
+  accounts: string[],
+  status: "open" | "close",
   details?: {
-    createAt: new Date("2021-01-01"),
-    updateAt: new Date("2021-05-01"),
+    createAt: Date,
+    updateAt: Date,
   };
 }
 
